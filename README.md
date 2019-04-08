@@ -8,6 +8,7 @@ Column height represents the relative level of traffic generated for a specific 
 ### Requirements
 * To install Pi-hole, run `curl -sSL https://install.pi-hole.net | bash`
 * The Sense-HAT package can be installed with `sudo apt-get install sense-hat`  
+* At least 24 hours of Pi-hole data.  Lack of data is not gracefully handled and will cause a fatal error.
 
 ### Usage
 **`dns_stats.py [-h] [-c {traffic, ads, alternate}] [-r] [-a ADDRESS] [-o {0, 90, 180, 270}] [-ll]`**  
